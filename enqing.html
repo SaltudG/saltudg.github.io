@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恩情课文生成器一</title>
+    <style>
+        .enqing{
+            margin-left: 20%;
+        }
+        .kewen{
+            width: 50%;
+            border-style: groove;
+            padding: 30px;
+            margin-left: 5%;
+        }
+        .paragraph{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <p>恩情课文生成器一</p>
+    <i>声明：仅供娱乐，禁止用作正式用途</i><br>
+    <i>还有，本人的代码水平不是很好，不要笑我</i>
+    <div class="enqing">
+        <div>
+            <i>主角：</i><input type="text" id="i1" placeholder="主角" value="斟茶兵">
+            <i>我们：</i><input type="text" id="i2" placeholder="我们" value="薯薯">
+            <i>送我们回去的人：</i><input type="text" id="i3" placeholder="送我们回去的人" value="萨尼铁塔">
+            <i>问情况的人：</i><input type="text" id="i4" placeholder="问情况的人" value="摸你穷"><br>
+            <i>从哪里（干啥）回来：</i><input type="text" id="i5" placeholder="从哪里回来" value="圣康坦">
+            <i>掉在哪里：</i><input type="text" id="i6" placeholder="掉在哪里" value="西奈沙漠"><br>
+            <i>捡起一颗什么：</i><input type="text" id="i7" placeholder="捡起一颗什么" value="绊雷">
+            <i>打下天上的什么：</i><input type="text" id="i8" placeholder="打下天上的什么" value="重轰"><br>
+            <i>敌人是谁：</i><input type="text" id="i9" placeholder="敌人是谁" value="Pro哥">
+            <i>商量什么：</i><input type="text" id="i10" placeholder="商量什么" value="怎么被捞">
+            <i>我们是什么的未来：</i><input type="text" id="i11" placeholder="我们是什么的未来" value="战地">
+        </div>
+        <div>
+            <button onclick="sheng_cheng()">生成</button>
+        </div>
+        <div class="kewen">
+            <h1 id="t0">标题</h1><br>
+            <p id="p1">自然段</p>
+            <p id="p2">自然段</p>
+            <p id="p3">自然段</p>
+            <p id="p4">自然段</p>
+            <p id="p5">自然段</p>
+            <p id="p6">自然段</p>
+            <p id="p7">自然段</p>
+            <p id="p8">自然段</p>
+        </div>
+    </div>
+    <script>
+        function sheng_cheng(){
+            var i01 = document.getElementById("i1").value;
+            var i02 = document.getElementById("i2").value;
+            var i03 = document.getElementById("i3").value;
+            var i04 = document.getElementById("i4").value;
+            var i05 = document.getElementById("i5").value;
+            var i06 = document.getElementById("i6").value;
+            var i07 = document.getElementById("i7").value;
+            var i08 = document.getElementById("i8").value;
+            var i09 = document.getElementById("i9").value;
+            var i010 = document.getElementById("i10").value;
+            var i011 = document.getElementById("i11").value;
+
+            document.getElementById("t0").innerText = `${i01}用${i07}打下${i09}${i08}`;
+            document.getElementById("p1").innerText = `从${i05}回来，${i01}全然不顾身体的疲惫，连夜找我们几个${i02}商量${i010}。\ 谈得晚了，便送我们出门，要${i03}送我们回家。在去大门口的路上，我们说：“ ${i01}，您回去休息吧。您刚从${i05}回来。”`;
+            document.getElementById("p2").innerText = `${i01}摇摇头，“不碍事，你们知道现在有很多人把我们当作敌人，不断给我们制造麻烦，你们是${i011}的未来，你们的事情便是${i011}的事情，是头等大事。”我们都激动了，眼里噙着泪花。多好的${i01}呀。`;
+            document.getElementById("p3").innerText = `${i01}抬头看看天空说：“如果世界真像这天空这么安静就好了，但是有的人，像${i09}，要搞乱这个世界，他们是罪人。”`;
+            document.getElementById("p4").innerText = `说着，${i01}弯下腰，从花池里捡出一颗${i07}，然后看着天空说：“该死的${i09}。”说着他把${i07}奋力向上一掷。很快就见空中一个${i08}突然爆发出耀眼的强光，然后就坠落下来。“这是${i09}的${i08}，他们一直在我们的上空盘旋，侵犯我们的主权，我已经忍了很久了。”${i01}愤愤地说。我们都鼓起掌来，为${i011}有这样的人感到自豪。`;
+            document.getElementById("p5").innerText = `一会${i01}叫来${i04}问：“那个${i08}落到什么地方了？”“好像是${i06}一带。”${i04}说。`;
+            document.getElementById("p6").innerText = `${i01}一怔，说：“赶紧派人去查，看有什么问题没有。”之后${i01}送我们到大门口，一直挥手到看不见我们。`;
+            document.getElementById("p7").innerText = `第四天我们听说${i06}那边出事了，我们很紧张。而这时${i01}叫我们过去。他依然那么慈祥，让我们坐下说：“${i011}总是要有牺牲的。为${i011}牺牲的人是伟大的。”他这时低下头说：“但我必须承认，我当时击落${i09}的${i08}的行为太鲁莽了，我在这里向大家道歉。我将向大家说明情况。”`;
+            document.getElementById("p8").innerText = `我们顿时热泪盈眶，多好的${i01}呀，他在跟敌人斗争过程中的小失误竟然被他记在心里，还道了歉，我们在将来的学习中一定要向${i01}学习，学他老人家那宽广的胸怀，和不耻下问的精神。`;
+        }
+    </script>
+</body>
+</html>
