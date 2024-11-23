@@ -1,0 +1,63 @@
+.body{/*主体*/
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    background-color:darkseagreen;
+}
+
+.tit{/*最大标题*/
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 500px;
+    margin: 20px;
+}
+
+.titi{/*标题*/
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 100px;
+    margin: 20px;
+}
+
+.d{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 600px;
+}
+
+.left{
+    float: left;
+}
+
+.div_0{/*靠左*/
+    float: left;
+    height: 280px;
+    min-width: 200px;
+}
+
+.div_1{/*分板块*/
+    padding: 20px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 20px;
+    float: left;
+    height: 280px;
+    min-width: 200px;
+}
+
+.div_2{/*分板块，矮一点的*/
+    padding: 20px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 20px;
+    float: left;
+    height: 100px;
+    min-width: 200px;
+}
+
+.para{/*段落开头空格*/
+    text-indent: 2em;
+}

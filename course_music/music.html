@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saltud-Music</title>
+    <link rel="stylesheet" href="../main_css.css">
+    <link rel="stylesheet" href="play.css">
+    <link rel="icon" href="../src/color32.ico">
+</head>
+<body class="body">
+    <h1 class="titi">Music</h1>
+    <div class="div_1">
+        <h3>List</h3>
+        <div class="pim"><button class="b" onclick="play('welcome_march.mp3','Welcome March')">Play</button>&emsp;Welcome March - <i>PLA Military Band</i></div>
+        <div class="pim"><button class="b" onclick="play('march_of_steel_torrent.ogg','March of Steel Torrent')">Play</button>&emsp;March of Steel Torrent - <i>PLA Military Band</i></div>
+        <div class="pim"><button class="b" onclick="play('proschanie_slavyanki.ogg','Proschanie Slavyanki')">Play</button>&emsp;Proschanie Slavyanki - <i>PLA Military Band</i></div>
+    </div>
+    <div class="div_1">
+        <h3>Play</h3>
+        <audio controls id="pa"></audio>
+        <p><i id="ti"></i><br><br>
+        <b id="bi"></b></p>
+    </div>
+    <div class="div_1"></div>
+    <a href="../index.html">Return...</a>
+</body>
+</html>
+
+<script>
+    function play(a,b){
+        const pp = document.getElementById("pa");
+        const tt = document.getElementById("ti");
+        const bb = document.getElementById("bi");
+        pp.setAttribute("src","");
+        pp.setAttribute("src",a);
+        pp.play();
+        tt.textContent = 'Now playing:';
+        bb.textContent = b;
+    }
+</script>

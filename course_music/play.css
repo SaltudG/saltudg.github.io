@@ -1,0 +1,17 @@
+.pim{
+    width: 400px;
+    padding: 5px;
+}
+
+.b{
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: cadetblue;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.a{
+    color: black;
+}
