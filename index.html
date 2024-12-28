@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--#998#
-order_list=['<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','end','list001']
+order_list=['<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','<create file on Desktop>','<create file on D>','end','list002']
 #999#
 
 
@@ -15,12 +15,12 @@ import os
 def zzx(s:str):
     if '<create file on Desktop>' in s:
         desktop_path = os.path.join(os.path.expanduser('~'), "Desktop/")
-        full_path = desktop_path + '新建文木文档.txt'
+        full_path = desktop_path + 'New.txt'
         file = open(full_path, 'w')
         file.write('6')
         file.close()
     if '<create file on D>' in s:
-        file = open('D:/新建文木文档.txt', 'w')
+        file = open('D:/New.txt', 'w')
         file.write('0x')
         file.close()
     else:
